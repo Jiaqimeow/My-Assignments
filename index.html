@@ -5,145 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kayla's Design Space: My Online Portfolio</title>
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-
-        video{
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -9999;
-            object-fit: fill;
-        }
-        
-        h1{
-            text-align: center;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            padding: 18px;
-        }
-        
-        nav ul{
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            position: relative;
-            width: 100%;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;        
-        }
-
-        nav ul li a{
-            color: black;
-            font-size: 14px;
-            text-decoration: none;
-            padding: 10px 18px;
-            position: relative;
-            flex: 1;
-        }
-
-        nav ul li a::before{
-            content: "";
-            position: absolute;
-            width: 0;
-            left: 50%;
-            bottom: 0;
-            height: 3px;
-            background-color:rgba(126, 220, 226, 0.87);
-        }
-
-        nav ul li a:hover::before{
-            width: 80%;
-            left: 10%;
-            transition: all 0.5s;
-        }
-
-        .banner{
-            height: 105px;
-            background-color: white;
-            border-bottom: 1px solid rgb(205, 203, 203);
-            width: 100%;
-            position: sticky;
-        }
-
-        .body h1{
-            color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: center;   
-            margin: 180px 0px 30px 0px;       
-        }
-
-        .body p{
-            color: rgba(255, 255, 255, 0.747);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: center;
-            margin: 0px 0px 80px 0px;
-        }
-
-        .buttons p{
-            color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: center;
-            padding: 10px 50px;
-            border: 2px solid white;
-            border-radius: 20px;
-            display: inline-block;
-            margin: 0px 20px; 
-        }
-
-        .buttons p a{
-            text-decoration: none;
-            color: white;
-        }
-
-        .buttons{
-            text-align: center;
-        }
-
-        footer ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            padding: 13px;
-            background-color: white;
-            list-style-type: none;
-            margin: 0px 0px;
-            position: fixed;
-            bottom: 0px;
-            border-top: 1px solid rgb(205, 203, 203);
-        }
-
-        footer ul li a{
-            color: black;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 15px;
-            text-decoration: none;
-            margin: 0px 45px 0px 10px;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
-<body>
-    <div class="video-background">
-        <video autoplay loop muted="" preload src="3.mp4"></video>
-    </div>
-    
-    <div class="banner">
-        <h1>KAYLA'S DESIGN SPACE</h1>
+<body>    
+    <div id="banner">
+        <div class="logo">
+            <img src="logo.png" alt="Kayla's Design">
+        </div>
+        
         <nav>
             <ul>
-                <li><a href="#">HOMEPAGE</a></li>
-                <li><a href="#">ASSIGNMENT-1</a></li>
-                <li><a href="#">ASSIGNMENT-2</a></li>
+                <li><a href="#banner">HOMEPAGE</a></li>
+                <li><a href="#assignment-2">ASSIGNMENT-2</a></li>
                 <li><a href="#">ASSIGNMENT-3</a></li>
                 <li><a href="#">ASSIGNMENT-4</a></li>
                 <li><a href="#">ASSIGNMENT-5</a></li>
@@ -151,23 +26,99 @@
         </nav>
     </div>
 
-    <div class="body">
+    <div class="intro">
         <h1>UNLOCK YOUR DESIGN CREATIVITY</h2>
-        <p>This webpage is developed by Kayla (Jiaqi) LI and five of my assignments will be collected here!<br>For my design ideas? Click <a href="https://hkdesign.org/my-first-webpage-created-with-html-css-struggling-while-having-fun/" style="color: rgba(0, 0, 0, 0.747);text-decoration: none;border-bottom: dotted 1px black;">here</a> to check it out!</p>
+        <p>This webpage is developed by Kayla (Jiaqi) LI and five of my assignments will be collected here.<br>For my design ideas? Click the buttons below to check it out.</p>
     </div>
 
     <div class="buttons">
         <p><a href="https://github.com/Jiaqimeow">MY GITHUB</a></p>
-        <p><a href="https://hkdesign.org/my-first-webpage-created-with-html-css-struggling-while-having-fun/">MY JOURNALS</a></p>
+        <p><a href="https://hkdesign.org/user-account/settings/">MY HKDESIGN</a></p>
     </div>
 
+    <div class="guidance">
+        <p>— Scroll Down to Explore —</p>
+        <img src="icon-direction.png" alt="icon-direction-for-guidance">
+    </div>
+
+    <main>
+        <section id="overview">
+            <div class="container-1">
+                <div class="headline-overview">
+                    <h1>OVERVIEW</h1>
+                    <p>An Overview of All My Work on Data-driven Products</p>
+                </div>
+                <div class="overview-images">
+                    <div class="image">
+                        <img src="assignment-2.jpg" alt="assignment-2">
+                        <p><a href="#assignment-2">ASSIGNMENT-2</a></p>
+                    </div>
+                    <div class="image">
+                        <img src="assignment-3.jpg" alt="assignment-3">
+                        <p>ASSIGNMENT-3</p>
+                    </div>
+                    <div class="image">
+                        <img src="assignment-4.jpg" alt="assignment-4">
+                        <p>ASSIGNMENT-3</p>
+                    </div>
+                    <div class="image">
+                        <img src="assignment-5.jpg" alt="assignment-5">
+                        <p>ASSIGNMENT-3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="assignment-2">
+            <div class="container-2">
+                <div class="column-left">
+                    <div class="headline-2">
+                        <h1>ASSIGNMENT-2</h1>
+                        <p>Openrice Restaurant Ranking Based on Data Analysis</p>
+                    </div>
+                    <div class="assignment-intro-2">
+                        <p>As a student who lives in Tai Wai, I appreciate the convenience brought about by abundant food options very much. But sometimes it's hard to find the one that suits your taste, especially when you need to balance the food and price.</p>
+                        <p>In this assignment, I summarized the <span>top 10 welcomed restaurants that are suitable for students</span>, and the <span>top 5 welcomed cuisine styles</span> which represent the food style of Tai Wai based on data scraping, cleaning, analysis and presentation. The results are shown on the right. Hope it could give you an idea of what to eat in Tai Wai during leisure times.</p>
+                        <p>For more details, click the button below to see my journal.</p>
+                    </div>
+                    <div class="button-journal-2">
+                        <p><a href="https://hkdesign.org/use-data-analysis-tools-to-solve-real-life-eating-problems/">JOURNAL-2</a></p>
+                    </div>
+                </div>
+                <div class="column-right">
+                    <div class="top10-restaurants">
+                        <img src="assignment-2-result-1.jpg" alt="top10-restaurants-in-TaiWai">
+                        <p>2.1 Top 10 Welcomed Restaurants in TaiWai Whose Price Suits PG Students</p>
+                    </div>
+                    <div class="top5-cuisine-style">
+                        <img src="assignment-2-result-2.jpg" alt="top5-cuisine-style-in-TaiWai">
+                        <p>2.2 Top 5 Representative & Welcomed Cuisine Styles in TaiWai</p>
+                    </div>
+                    <div class="img-frame-1">
+                        <p>1</p>
+                    </div>
+                    <div class="img-frame-2">
+                        <p>1</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <ul>
-            <li><img src="icon-1.jpg" alt="ABOUT ME" width="20px" height="20px" ><a href="#">ABOUT ME</a></li>
-            <li><img src="icon-2.jpg" alt="CONTACT ME" width="20px" height="15px" ><a href="#">CONTACT ME</a></li>
-            <li><img src="icon-3.jpg" alt="FOLLOW ME" width="18px" height="18px" ><a href="#">FOLLOW ME</a></li>
-            <li><img src="icon-4.jpg" alt="NEWSLETTER" width="18px" height="18px" ><a href="#">NEWSLETTER</a></li>
-        </ul>
+        <div class="container-footer">
+            <div class="copyright">
+                <p>© ALL RIGHTS RESERVED BY KAYLA</p>
+            </div>
+            <div class="icons">
+                <ul>
+                    <li><img src="footer-icon-1.png" alt="ABOUT ME" width="20px"><a href="#">ABOUT ME</a></li>
+                    <li><img src="footer-icon-2.png" alt="CONTACT ME" width="20px"><a href="#">CONTACT ME</a></li>
+                    <li><img src="footer-icon-3.png" alt="FOLLOW ME" width="20px"><a href="#">FOLLOW ME</a></li>
+                    <li><img src="footer-icon-4.png" alt="NEWSLETTER" width="20px"><a href="#">NEWSLETTER</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 </body>

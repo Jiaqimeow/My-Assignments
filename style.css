@@ -1,0 +1,348 @@
+/* Overall */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(cup-6878196_1920.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;      
+    float: right; 
+    padding: 25px 10px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+}
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background-color:#f3b215;
+}
+
+nav ul li a:hover::before{
+    width: 80%;
+    left: 10%;
+    transition: all 0.5s;
+}
+
+/* Banner */
+#banner{
+    height: 70px;
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(cup-6878196_1920.jpg);
+    background-size: cover;
+}
+
+#banner .logo img{
+    float: left;
+    padding: 10px 30px;
+    width: 250px;
+    height: 55px;
+}
+
+/* Introduction and Guidance Mark On the Main Page */
+.intro h1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;   
+    margin: 250px 0px 30px 0px;       
+}
+
+.intro p{
+    color: rgba(255, 255, 255, 0.747);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0px 0px 80px 0px;
+}
+
+.buttons p{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px 50px;
+    border: 2px solid #f3b215;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0px 20px; 
+}
+
+.buttons p a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.guidance p{
+    color: rgba(255, 255, 255, 0.747);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 170px 0px 15px 0px;
+}
+
+.guidance img{
+    display: block;
+    margin: 10px auto 0px auto;
+    height: 15px;
+    width: 20px;
+    opacity: 0.747;
+    bottom: 10px;
+}
+
+/* Overview On All the Assignments */
+#overview{
+    background-color:rgb(247, 244, 238);
+    height: 490px;
+    width: 100%;
+    margin: 25px 0px 0px 0px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#overview .container-1 .headline-overview h1{
+    text-align: center;
+    color: #432d07;
+    padding: 55px 0px 0px 0px;
+    margin: 0px 0px 15px 0px;
+    font-size: 30px;
+}
+
+#overview .container-1 .headline-overview p{
+    text-align: center;
+    color: grey;
+    opacity: 0.8;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 0px 20px 0px;
+}
+
+#overview .container-1 .headline-overview p::after{
+    content: '';
+    display: block;
+    width: 4rem;
+    margin: 20px auto 50px auto;
+    border-bottom: 4px solid #f3b215;
+}
+
+#overview .container-1 .overview-images{
+    display: block;
+    margin: 0 auto;
+    width: 1090px;
+}
+
+#overview .container-1 .overview-images .image{
+    float: left;
+    margin: 8px;
+}
+
+#overview .container-1 .overview-images .image img{
+    width: 250px;
+    height: 166px;
+}
+
+#overview .container-1 .overview-images .image p{
+    text-align: center;
+    margin: -4px 0px;
+    padding: 3px;
+    background-color:#784212;
+    color: white;
+}
+
+#overview .container-1 .overview-images .image p:hover{
+    text-align: center;
+    margin: -4px 0px;
+    padding: 3px;
+    background-color:#784212;
+    color:bisque;
+    font-size: larger;
+    font-style: italic;
+}
+
+#overview .container-1 .overview-images .image p a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Assignment-2 */
+#assignment-2{
+    background-color:white;
+    height: 560px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#assignment-2 .container-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#assignment-2 .container-2 .column-left .headline-2 h1{
+    color: #432d07;
+    padding: 55px 0px 0px 0px;
+    margin: 0px 400px 15px 80px;
+    font-size: 30px;
+    width: 250px;
+}
+
+#assignment-2 .container-2 .column-left .headline-2 h1::after{
+    content: '';
+    display: block;
+    width: 4rem;
+    margin: 20px 0px 30px 0px;
+    border-bottom: 4px solid #f3b215;
+}
+
+#assignment-2 .container-2 .column-left .headline-2 p{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    margin-bottom: 40px;
+    margin-left: 80px;
+}
+
+#assignment-2 .container-2 .column-left .assignment-intro-2 p{
+    margin-bottom: 25px;
+    margin-left: 80px;
+    width: 550px;
+    font-size: 14px;
+}
+
+#assignment-2 .container-2 .column-left .assignment-intro-2 p span{
+    color: #f3b215;
+}
+
+#assignment-2 .container-2 .column-left .button-journal-2 p{
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 20px;
+    background-color:#f3b215;
+    width: 140px;
+    margin-left: 80px;
+}
+
+#assignment-2 .container-2 .column-left .button-journal-2 p a{
+    text-decoration: none;
+    color:#432d07;
+}
+
+#assignment-2 .container-2 .column-right .top10-restaurants img{
+    width: 400px;
+    display: block;
+    margin: 50px auto 10px auto;
+}
+
+#assignment-2 .container-2 .column-right .top10-restaurants p{
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#assignment-2 .container-2 .column-right .top5-cuisine-style img{
+    width: 400px;
+    display: block;
+    margin: 20px auto 10px auto;
+}
+
+#assignment-2 .container-2 .column-right .top5-cuisine-style p{
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#assignment-2 .container-2 .column-right .img-frame-1 p{
+    border: #f3b215 5px solid;
+    padding: 100px 100px;
+    color: transparent;
+    margin: -530px -20px 80px -20px;
+}
+
+#assignment-2 .container-2 .column-right .img-frame-2 p{
+    border: #f3b215 5px solid;
+    padding: 70px 100px;
+    color: transparent;
+    margin: -30px -20px 80px -20px;
+}
+
+/* Footer */
+footer .container-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #432d07;
+    padding: 15px 0px;
+}
+
+footer .container-footer .copyright p{
+    color: white;
+    opacity: 0.7;
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    margin-top: 5px;
+    margin-right: 270px;
+    margin-left: 60px;
+}
+
+footer .container-footer .icons{
+    display: block;
+    float: right;
+}
+
+footer .container-footer .icons ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    float: right;
+    background-color: #432d07;
+    list-style-type: none;
+    margin: 0px 0px;
+    position: relative;
+    bottom: 0px;
+}
+
+footer .container-footer .icons ul li a{
+    color: white;
+    opacity: 0.7;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0px 45px 0px 10px;
+}
+
