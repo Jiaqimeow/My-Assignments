@@ -298,6 +298,75 @@ nav ul li a:hover::before{
     margin: -30px -20px 80px -20px;
 }
 
+/* Assignment-3 */
+#assignment-3{
+    background-color:rgb(247, 244, 238);
+    height: 590px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#assignment-3 .container-3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#assignment-3 .container-3 .column-left .headline-3 h1{
+    color: #432d07;
+    padding: 55px 0px 0px 0px;
+    margin: 0px 380px 15px 80px;
+    font-size: 30px;
+    width: 250px;
+}
+
+#assignment-3 .container-3 .column-left .headline-3 h1::after{
+    content: '';
+    display: block;
+    width: 4rem;
+    margin: 20px 0px 30px 0px;
+    border-bottom: 4px solid #f3b215;
+}
+
+#assignment-3 .container-3 .column-left .headline-3 p{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    margin-bottom: 40px;
+    margin-left: 80px;
+}
+
+#assignment-3 .container-3 .column-left .assignment-intro-3 p{
+    margin-bottom: 25px;
+    margin-left: 80px;
+    width: 550px;
+    font-size: 14px;
+}
+
+#assignment-3 .container-3 .column-left .assignment-intro-3 p span{
+    color: #f3b215;
+}
+
+#assignment-3 .container-3 .column-left .button-journal-3 p{
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 20px;
+    background-color:#f3b215;
+    width: 140px;
+    margin-left: 80px;
+}
+
+#assignment-3 .container-3 .column-left .button-journal-3 p a{
+    text-decoration: none;
+    color:#432d07;
+}
+
+#assignment-3 .container-3 .column-right .assignment-3-img img{
+    width: 470px;
+    display: block;
+    margin: 130px auto;
+}
+
 /* Footer */
 footer .container-footer{
     display: flex;
